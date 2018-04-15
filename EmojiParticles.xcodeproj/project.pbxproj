@@ -7,10 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		490A8B9B2082C04F0041670A /* TransactionsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490A8B9A2082C04F0041670A /* TransactionsLoader.swift */; };
 		490A8BA12083AFB70041670A /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490A8BA02083AFB70041670A /* MessageCell.swift */; };
-		498DF8782082BD590077D6B6 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498DF8772082BD590077D6B6 /* Transaction.swift */; };
-		498DF87C2082BF220077D6B6 /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498DF87B2082BF220077D6B6 /* TransactionCell.swift */; };
 		49BB1792206CFB1E002F1A92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BB1791206CFB1E002F1A92 /* AppDelegate.swift */; };
 		49BB1794206CFB1E002F1A92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BB1793206CFB1E002F1A92 /* ViewController.swift */; };
 		49BB1797206CFB1E002F1A92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49BB1795206CFB1E002F1A92 /* Main.storyboard */; };
@@ -19,10 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		490A8B9A2082C04F0041670A /* TransactionsLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsLoader.swift; sourceTree = "<group>"; };
 		490A8BA02083AFB70041670A /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
-		498DF8772082BD590077D6B6 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
-		498DF87B2082BF220077D6B6 /* TransactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
 		49BB178E206CFB1E002F1A92 /* EmojiParticles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmojiParticles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49BB1791206CFB1E002F1A92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49BB1793206CFB1E002F1A92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,9 +60,6 @@
 				49BB1793206CFB1E002F1A92 /* ViewController.swift */,
 				49BB1795206CFB1E002F1A92 /* Main.storyboard */,
 				49BB179D206CFB1E002F1A92 /* Info.plist */,
-				498DF8772082BD590077D6B6 /* Transaction.swift */,
-				498DF87B2082BF220077D6B6 /* TransactionCell.swift */,
-				490A8B9A2082C04F0041670A /* TransactionsLoader.swift */,
 				490A8BA02083AFB70041670A /* MessageCell.swift */,
 				49F086372083B26800A90FCD /* Message.swift */,
 				49F086392083B68100A90FCD /* String+Emoji.swift */,
@@ -146,12 +137,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				490A8B9B2082C04F0041670A /* TransactionsLoader.swift in Sources */,
 				49BB1794206CFB1E002F1A92 /* ViewController.swift in Sources */,
 				49BB1792206CFB1E002F1A92 /* AppDelegate.swift in Sources */,
 				49F0863A2083B68100A90FCD /* String+Emoji.swift in Sources */,
-				498DF87C2082BF220077D6B6 /* TransactionCell.swift in Sources */,
-				498DF8782082BD590077D6B6 /* Transaction.swift in Sources */,
 				490A8BA12083AFB70041670A /* MessageCell.swift in Sources */,
 				49F086382083B26800A90FCD /* Message.swift in Sources */,
 			);

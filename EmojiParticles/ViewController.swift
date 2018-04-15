@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     var scene: SKScene!
     var messages: [Message] = []
     @IBOutlet weak var tableView: UITableView!
+    let FontSize: CGFloat = 36.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +24,7 @@ class ViewController: UIViewController {
         particleView.presentScene(scene)
     }
     
-    func setupParticleView(text: String) {
+    func setupParticleView(text: String, forScene scene: SKScene) {
         let image = generateImageWithText(text: text)
         let emitter = SKEmitterNode()
         emitter.particleTexture = SKTexture(image: image)
@@ -36,15 +37,15 @@ class ViewController: UIViewController {
         emitter.particleBirthRate = 3
         emitter.particleSpeed = 120
         emitter.particleSpeedRange = 50
-        emitter.particlePositionRange = CGVector(dx: particleView.frame.size.width/2, dy: 5)
-        emitter.particlePosition = CGPoint(x: particleView.frame.size.width/2, y: 0)
+        emitter.particlePositionRange = CGVector(dx: particleView.frame.size.width / 2, dy: 5)
+        emitter.particlePosition = CGPoint(x: particleView.frame.size.width / 2, y: 0)
         emitter.targetNode = scene
         scene.addChild(emitter)
     }
     
     func generateImageWithText(text: String) -> UIImage
     {
-        let attributes = [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 36)]
+        let attributes = [NSAttributedStringKey.font: UIFont.systemFont(ofSize: FontSize)]
         let size = text.size(withAttributes: attributes)
         UIGraphicsBeginImageContext(size)
         text.draw(in: CGRect(origin: CGPoint.zero, size: size), withAttributes: attributes)
@@ -62,7 +63,7 @@ class ViewController: UIViewController {
         if let text = messageTextField.text {
             if text.count == 1 {
                 if text.emojis.count > 0 {
-                    setupParticleView(text: text)
+                    setupParticleView(text: text, forScene: scene)
                 }
             }
             let message = Message(author: "Player", message: text)
